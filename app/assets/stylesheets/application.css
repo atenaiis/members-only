@@ -13,9 +13,3 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
-
- .regina_color {
-   background-color: grey;
- }
- 
