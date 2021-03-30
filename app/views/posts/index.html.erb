@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
-
+<div class="jumbotron text-center">
 <h1>What is going on..</h1>
-
-<table class="table table-striped">
+</div>
+<div class="container">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Title</th>
@@ -25,7 +26,8 @@
   <% end %>
 </tbody>
 </table>
-
+</div>
 <br>
-
+<button type="button" class="btn btn-default">
 <%= link_to 'New Post', new_post_path %>
+</button>
