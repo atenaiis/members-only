@@ -1,18 +1,23 @@
-
+<div class="text-center">
+  <div class="row">
 <p>
-<strong>Title:</strong>
-<%= @post.title %>
+  <strong>Title:</strong>
+  <%= @post.title %>
 </p>
 
 <p>
-<strong>Body:</strong>
-<%= @post.body %>
+  <strong>Body:</strong>
+  <%= @post.body %>
 </p>
 
 <p>
-  <strong>Post:</strong>
-  <%= @post.post %>
+  <strong>Author:</strong>
+  <%= author_name(@post) %>
 </p>
+</div>
+</div>
+</br>
+</br>
 <button type="button" class="btn btn-default">
 <%= link_to 'Edit', edit_post_path(@post) %> 
 </button>
