@@ -16,8 +16,8 @@
   <tbody>
   <% @posts.each do |post| %>
     <tr>
-      <td><%= post.title %></td>
-      <td><%= post.body %></td>
+      <td><%= post.Title %></td>
+      <td><%= post.Body %></td>
       <td><%= author_name(post) %></td>
       <td><%= link_to 'Show', post %></td>
       <td><%= link_to 'Edit', edit_post_path(post), class: "text-warning #{display_if_author(post)}" %></td>
