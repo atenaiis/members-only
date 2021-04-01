@@ -15,14 +15,7 @@
     <nav class="navbar navbar-inverse">
       <p class="navbar-brand text-white">Members Only</p>
       <p class="navbar-text ml-auto">
-        <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-        <% else %>
-        <span class="glyphicon glyphicon-user text-white"> <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-        <span class="glyphicon glyphicon-log-in text-white"> <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-        <% end %>
+        <%= navbar%>
       </p>
     </nav>
     <div class="container-fluid">
